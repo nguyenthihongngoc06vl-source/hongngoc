@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="vi">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260917-05-f0c5fe2","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/83d6dfdadcd4750a.telemetry_sdk.js" integrity="sha512-XS4Dvzp6vbagZS9vFErihvr8aO3S0tH78KWUefn06fmL4WYqryBtZj/IOLITYj7dFA4gPVvPg1W/JB1DK3uLNQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Người Hùng Xanh</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Fraunces:opsz,wght@9..144,700;9..144,800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#16443b; --cream:#fffdf4; --leaf:#2f9e63; --orange:#f58b2a; --blue:#278bd7; --red:#e54b4b; }
+    * { box-sizing:border-box; }
+    body { margin:0; width:100%; min-height:100%; font-family:"DM Sans",sans-serif; color:var(--ink); overflow-x:hidden; }
+    button, input { font:inherit; }
+    button { cursor:pointer; }
+    button:focus-visible, input:focus-visible { outline:4px solid #ffe063; outline-offset:3px; }
+    .park-scene { position:relative; isolation:isolate; overflow:hidden; min-height:calc(100 * min(var(--vh, 1vh), 1vh)); background:linear-gradient(#9ee6ff 0%,#d7f6ff 42%,#8ddb69 42%,#4ea950 100%); }
+    .park-scene::after { content:""; position:absolute; z-index:-1; inset:38% 0 0; background:radial-gradient(ellipse at 10% 90%,#c7ed79 0 8%,transparent 8.5%),radial-gradient(ellipse at 90% 80%,#c7ed79 0 8%,transparent 8.5%),linear-gradient(180deg,transparent,#4ca650); }
+    .cloud { position:absolute; width:150px; height:45px; background:#fff; border-radius:80px; opacity:.92; box-shadow:40px 8px 0 4px #fff,80px 0 0 0 #fff; animation:drift 24s linear infinite; }
+    .cloud.c2 { top:18%; animation-delay:-11s; animation-duration:30s; transform:scale(.68); }
+    .sun { position:absolute; top:32px; right:7%; width:82px; height:82px; border-radius:50%; background:#ffe26d; box-shadow:0 0 0 12px #ffe26d55,0 0 40px #fff3a5; animation:pulseSun 3s ease-in-out infinite; }
+    .bird { position:absolute; font-size:28px; animation:birdFly 13s linear infinite; }
+    .leaf-fall { position:absolute; color:#2f9e63; font-size:22px; animation:fall 7s linear infinite; }
+    .tree { position:absolute; bottom:0; width:150px; height:230px; transform-origin:bottom; animation:sway 4s ease-in-out infinite; }
+    .tree .trunk { position:absolute; bottom:0; left:62px; width:28px; height:126px; background:#855a35; border-radius:20px 20px 2px 2px; }
+    .tree .crown { position:absolute; border-radius:50%; background:#3caa5e; box-shadow:35px 17px 0 #62c65f,-28px 31px 0 #4bb36b,8px 55px 0 #33985a; width:108px; height:108px; top:10px; left:25px; }
+    .screen { display:none; position:relative; z-index:2; width:100%; min-height:calc(100 * min(var(--vh, 1vh), 1vh)); }
+    .screen.active { display:flex; }
+    .home-card, .modal-card { background:#fffdf4e8; border:4px solid #fff; box-shadow:0 18px 0 #226d4350,0 26px 45px #16443b30; backdrop-filter:blur(7px); }
+    .hero-title { font-family:"Fraunces",serif; text-shadow:0 4px 0 #fff; }
+    .hero-character { width:min(270px,38vw); filter:drop-shadow(0 13px 2px #16443b38); animation:heroBob 2.8s ease-in-out infinite; }
+    .action-btn { border:3px solid #fff; box-shadow:0 7px 0 #16443b36; transition:transform .18s, box-shadow .18s, filter .18s; }
+    .action-btn:hover { transform:translateY(-3px) scale(1.02); box-shadow:0 10px 0 #16443b28,0 0 22px #fff7a9; filter:brightness(1.05); }
+    .action-btn:active { transform:translateY(5px); box-shadow:0 2px 0 #16443b30; }
+    .topbar { background:#fffdf4ed; border-bottom:4px solid #ffffff; box-shadow:0 4px 14px #16443b20; }
+    .stat-pill { min-width:126px; border:2px solid #d8f0b8; background:#fff; box-shadow:0 3px 0 #b9db9c; }
+    .timer-bar { height:15px; background:#d9f1d4; border:2px solid #fff; overflow:hidden; border-radius:99px; box-shadow:inset 0 1px 4px #1a643833; }
+    .timer-fill { height:100%; width:100%; background:linear-gradient(90deg,#74c84e,#f7d64e); transition:width .25s linear; }
+    .timer-fill.urgent { background:#e95555; animation:blink .6s infinite; }
+    .item-zone { min-height:330px; display:grid; place-items:center; }
+    .trash-item { width:min(300px,74vw); touch-action:none; user-select:none; cursor:grab; filter:drop-shadow(0 12px 7px #154a3540); transition:transform .25s, opacity .3s; }
+    .trash-item.dragging { cursor:grabbing; transform:scale(1.08) rotate(-4deg); z-index:20; }
+    .trash-item.returning { animation:shake .45s; }
+    .trash-art { height:220px; display:grid; place-items:center; }
+    .trash-art svg { width:220px; height:210px; overflow:visible; }
+    .trash-name { background:#fffdf4; border:3px solid #fff; box-shadow:0 5px 0 #28633b45; }
+    .bin { position:relative; min-height:196px; border:5px solid #fff; border-radius:25px 25px 38px 38px; box-shadow:0 9px 0 #16443b2d; transition:transform .2s,filter .2s; overflow:hidden; }
+    .bin::before { content:""; position:absolute; top:13px; left:8%; width:84%; height:19px; border-radius:12px; background:#ffffff77; }
+    .bin.active-drop { transform:translateY(-10px) scale(1.045); filter:brightness(1.12) drop-shadow(0 0 18px #fff8aa); }
+    .bin.wrong-drop { animation:shake .45s; }
+    .bin-icon { width:44px; height:44px; margin:auto; color:#fff; }
+    .guide-bubble { background:#fffdf4; border:3px solid #fff; box-shadow:0 5px 0 #1a643830; }
+    .feedback { position:absolute; z-index:40; top:26%; left:50%; transform:translate(-50%,-50%) scale(.7); opacity:0; pointer-events:none; padding:17px 28px; border-radius:24px; background:#fffdf4; border:4px solid #fff; box-shadow:0 10px 30px #16443b45; text-align:center; }
+    .feedback.show { animation:feedback .8s ease forwards; }
+    .spark { position:absolute; z-index:35; pointer-events:none; animation:spark .9s ease-out forwards; font-size:24px; }
+    .flower { position:absolute; bottom:14px; font-size:28px; animation:flowerIn .7s both; }
+    .ranking-table { border-collapse:separate; border-spacing:0 8px; }
+    .ranking-table th { color:#317246; font-size:.86rem; }
+    .ranking-table td { background:#fff; padding:11px; }
+    .ranking-table td:first-child { border-radius:14px 0 0 14px; }
+    .ranking-table td:last-child { border-radius:0 14px 14px 0; font-weight:800; color:#e27a22; }
+    .game-item { display:none; }
+    #game-screen .trash-name { display:none; }
+    .game-item.current { display:block; }
+    .confetti { position:fixed; z-index:80; width:12px; height:12px; top:-20px; animation:confetti 2.5s linear forwards; pointer-events:none; }
+    @keyframes drift { from{left:-210px}to{left:110%} } @keyframes pulseSun {50%{transform:scale(1.08)}} @keyframes birdFly {from{left:-80px;top:23%}to{left:108%;top:10%}} @keyframes fall {from{top:-30px;transform:rotate(0)}to{top:100%;transform:translateX(100px) rotate(360deg)}} @keyframes sway {50%{transform:rotate(3deg)}} @keyframes heroBob {50%{transform:translateY(-10px)}} @keyframes blink {50%{opacity:.35}} @keyframes shake {20%,60%{transform:translateX(-12px)}40%,80%{transform:translateX(12px)}} @keyframes feedback {25%{opacity:1;transform:translate(-50%,-50%) scale(1.12)}100%{opacity:0;transform:translate(-50%,-65%) scale(1)}} @keyframes spark {to{transform:translate(var(--x),var(--y)) rotate(250deg);opacity:0}} @keyframes flowerIn {from{transform:scale(0) rotate(-35deg)}to{transform:scale(1)}} @keyframes confetti {to{transform:translate(var(--x),calc(100 * min(var(--vh, 1vh), 1vh))) rotate(730deg);opacity:0}}
+    @media(max-width:720px) { .stat-pill{min-width:0;padding:.4rem .55rem}.stat-label{display:none}.bin{min-height:162px}.bin p{font-size:.68rem}.bin h3{font-size:.82rem}.hero-character{width:180px}.tree{transform:scale(.7);transform-origin:bottom}.trash-art{height:190px}.trash-art svg{width:190px;height:180px} }
+  </style>
+  <script src="/_sdk/8de366929c5f3b48.data_sdk.js" type="text/javascript" integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
+  <script src="/_sdk/a558f474cd01d324.resizing_sdk.js" type="text/javascript" integrity="sha512-evIEjzvRDdaV6tHT4THeYa18+ppfgUj4Zpx5W8R1gaF2VKcOba7TPP4x2YYqsfThPwuC5NaBFyUH6V81c3i8kA=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full">
+  <div class="park-scene">
+   <div class="sun"></div>
+   <div class="cloud" style="top:10%"></div>
+   <div class="cloud c2"></div>
+   <div class="bird">
+    〰︎
+   </div>
+   <div class="leaf-fall" style="left:18%;animation-delay:-1s">
+    🍃
+   </div>
+   <div class="leaf-fall" style="left:76%;animation-delay:-4s">
+    🍃
+   </div>
+   <div class="tree" style="left:-28px">
+    <div class="trunk"></div>
+    <div class="crown"></div>
+   </div>
+   <div class="tree" style="right:-18px;animation-delay:-2s">
+    <div class="trunk"></div>
+    <div class="crown"></div>
+   </div>
+   <main>
+    <section id="home-screen" class="screen active items-center justify-center p-5">
+     <div class="home-card w-full max-w-5xl rounded-[38px] p-6 md:p-10">
+      <div class="grid items-center gap-5 md:grid-cols-[1fr_auto]">
+       <div class="text-center md:text-left">
+        <div data-template-id="home-kicker" class="canva-tag mb-3 inline-block rounded-full bg-[#d9f4bd] px-4 py-2 font-bold text-[#267347]"></div>
+        <h1 data-template-id="home-title" class="canva-text hero-title text-4xl font-extrabold leading-tight text-[#22744a] md:text-6xl"></h1>
+        <p data-template-id="home-subtitle" class="canva-text mt-3 text-lg font-bold text-[#e07125] md:text-2xl"></p>
+        <p data-template-id="home-story" class="canva-text mx-auto mt-4 max-w-xl text-base leading-relaxed md:mx-0"></p>
+        <div class="mt-7 grid gap-3 sm:grid-cols-2">
+         <button id="start-home" data-template-id="start-home-button" type="button" class="canva-button action-btn rounded-2xl bg-[#f28b2b] px-5 py-4 font-extrabold text-white"></button> <button id="rules-home" data-template-id="rules-home-button" type="button" class="canva-button action-btn rounded-2xl bg-[#329d67] px-5 py-4 font-extrabold text-white"></button> <button id="leader-home" data-template-id="leader-home-button" type="button" class="canva-button action-btn rounded-2xl bg-[#278bd7] px-5 py-4 font-extrabold text-white"></button> <button id="sound-home" data-template-id="sound-home-button" type="button" class="canva-button action-btn rounded-2xl bg-[#7b62c7] px-5 py-4 font-extrabold text-white"></button>
+        </div>
+       </div>
+       <svg class="hero-character" viewbox="0 0 250 320" role="img" aria-label="Nhân vật Người Hùng Xanh">
+        <path d="M76 258 Q68 302 49 311 M174 258 Q186 302 204 311" stroke="#23523e" stroke-width="18" stroke-linecap="round" /> <path d="M77 156 Q43 191 60 255 Q124 285 190 255 Q207 191 173 156Z" fill="#39a86a" stroke="#1a633e" stroke-width="7" /> <path d="M102 157 L126 196 L151 157" fill="#f2c79c" stroke="#1a633e" stroke-width="5" /> <circle cx="125" cy="107" r="57" fill="#f4c99b" stroke="#1a633e" stroke-width="7" /> <path d="M71 98 Q73 35 126 36 Q184 41 180 97 Q152 72 126 77 Q94 73 71 98" fill="#26794b" stroke="#1a633e" stroke-width="7" /> <path d="M112 33 Q126 3 149 24 Q152 47 126 55" fill="#5ec768" stroke="#1a633e" stroke-width="6" /> <circle cx="105" cy="109" r="5" fill="#214636" /><circle cx="146" cy="109" r="5" fill="#214636" /> <path d="M108 132 Q125 145 143 132" fill="none" stroke="#a24f4c" stroke-width="5" stroke-linecap="round" /> <path d="M65 178 Q32 195 36 225" fill="none" stroke="#f4c99b" stroke-width="18" stroke-linecap="round" /> <path d="M185 178 Q218 194 214 226" fill="none" stroke="#f4c99b" stroke-width="18" stroke-linecap="round" /> <path d="M76 176 Q125 150 174 176 L160 249 Q125 264 90 249Z" fill="#51c275" /> <path d="M109 194 Q125 177 141 194 Q139 218 125 230 Q111 218 109 194" fill="#e9ffe4" stroke="#237246" stroke-width="4" /> <path d="M124 199 Q116 189 111 187 M124 199 Q134 186 140 185" stroke="#39a86a" stroke-width="4" /> <path d="M124 199 L124 219" stroke="#39a86a" stroke-width="4" /> <path d="M63 257 L107 257 L101 306 L57 306Z M143 257 L187 257 L194 306 L149 306Z" fill="#2c704a" stroke="#1a633e" stroke-width="6" />
+       </svg>
+      </div>
+     </div>
+    </section>
+    <section id="name-screen" class="screen items-center justify-center p-5">
+     <div class="modal-card w-full max-w-xl rounded-[34px] p-7 text-center md:p-10">
+      <div class="mb-3 text-5xl">
+       🦸
+      </div>
+      <h2 data-template-id="name-title" class="canva-text hero-title text-3xl font-extrabold text-[#22744a]"></h2>
+      <p data-template-id="name-helper" class="canva-text mt-3 leading-relaxed"></p>
+      <form id="name-form" class="mt-7">
+       <label data-template-id="name-label" class="canva-text mb-2 block text-left font-bold text-[#317246]" for="player-name"></label> <input id="player-name" data-template-id="name-input" maxlength="18" required class="canva-input w-full rounded-2xl border-3 border-[#b8df89] bg-white px-5 py-4 text-center text-lg font-bold text-[#16443b] shadow-inner">
+       <p id="name-error" class="mt-2 hidden font-bold text-red-600"></p><button data-template-id="begin-challenge-button" class="canva-button action-btn mt-5 w-full rounded-2xl bg-[#f28b2b] px-5 py-4 font-extrabold text-white" type="submit"></button>
+      </form><button id="name-back" data-template-id="name-back-button" type="button" class="canva-button mt-5 font-bold text-[#287449] underline"></button>
+     </div>
+    </section>
+    <section id="rules-screen" class="screen items-center justify-center p-4 md:p-8">
+     <div class="modal-card w-full max-w-4xl rounded-[32px] p-6 md:p-9">
+      <h2 data-template-id="rules-title" class="canva-text hero-title text-center text-3xl font-extrabold text-[#22744a]"></h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-2">
+       <article class="rounded-3xl bg-[#effbe0] p-5">
+        <h3 data-template-id="visual-guide-title" class="canva-text font-extrabold text-[#287449]"></h3>
+        <div class="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-5">
+         <div data-template-id="guide-item-bread" class="canva-card rounded-2xl bg-white p-2 text-center">
+          <span class="block text-3xl">🍞</span><span data-template-id="guide-name-bread" class="canva-text text-xs font-bold"></span>
+         </div>
+         <div data-template-id="guide-item-leaves" class="canva-card rounded-2xl bg-white p-2 text-center">
+          <span class="block text-3xl">🍃</span><span data-template-id="guide-name-leaves" class="canva-text text-xs font-bold"></span>
+         </div>
+         <div data-template-id="guide-item-apple" class="canva-card rounded-2xl bg-white p-2 text-center">
+          <span class="block text-3xl">🍎</span><span data-template-id="guide-name-apple" class="canva-text text-xs font-bold"></span>
+         </div>
+         <div data-template-id="guide-item-milk" class="canva-card rounded-2xl bg-white p-2 text-center">
+          <span class="block text-3xl">🥛</span><span data-template-id="guide-name-milk" class="canva-text text-xs font-bold"></span>
+         </div>
+         <div data-template-id="guide-item-box" class="canva-card rounded-2xl bg-white p-2 text-center">
+          <span class="block text-3xl">📦</span><span data-template-id="guide-name-box" class="canva-text text-xs font-bold"></span>
+         </div>
+         <div data-template-id="guide-item-newspaper" class="canva-card rounded-2xl bg-white p-2 text-center">
+          <span class="block text-3xl">📰</span><span data-template-id="guide-name-newspaper" class="canva-text text-xs font-bold"></span>
+         </div>
+         <div data-template-id="guide-item-bottle" class="canva-card rounded-2xl bg-white p-2 text-center">
+          <span class="block text-3xl">🧴</span><span data-template-id="guide-name-bottle" class="canva-text text-xs font-bold"></span>
+         </div>
+         <div data-template-id="guide-item-bag" class="canva-card rounded-2xl bg-white p-2 text-center">
+          <span class="block text-3xl">🛍️</span><span data-template-id="guide-name-bag" class="canva-text text-xs font-bold"></span>
+         </div>
+         <div data-template-id="guide-item-bulb" class="canva-card rounded-2xl bg-white p-2 text-center">
+          <span class="block text-3xl">💡</span><span data-template-id="guide-name-bulb" class="canva-text text-xs font-bold"></span>
+         </div>
+         <div data-template-id="guide-item-battery" class="canva-card rounded-2xl bg-white p-2 text-center">
+          <span class="block text-3xl">🔋</span><span data-template-id="guide-name-battery" class="canva-text text-xs font-bold"></span>
+         </div>
+        </div>
+       </article>
+       <article class="rounded-3xl bg-[#effbe0] p-5">
+        <h3 data-template-id="mission-title" class="canva-text font-extrabold text-[#287449]"></h3>
+        <p data-template-id="mission-text" class="canva-text mt-2 leading-relaxed"></p>
+        <h3 data-template-id="how-title" class="canva-text mt-5 font-extrabold text-[#287449]"></h3>
+        <p data-template-id="how-text" class="canva-text mt-2 whitespace-pre-line leading-relaxed"></p>
+       </article>
+       <article class="rounded-3xl bg-[#fff8de] p-5">
+        <h3 data-template-id="groups-title" class="canva-text font-extrabold text-[#287449]"></h3>
+        <p data-template-id="organic-list" class="canva-text mt-2 rounded-xl bg-[#fff1df] p-3 leading-relaxed"></p>
+        <p data-template-id="recycle-list" class="canva-text mt-2 rounded-xl bg-[#e2f4ff] p-3 leading-relaxed"></p>
+        <p data-template-id="remaining-list" class="canva-text mt-2 rounded-xl bg-[#ffe6e3] p-3 leading-relaxed"></p>
+        <h3 data-template-id="score-title" class="canva-text mt-5 font-extrabold text-[#287449]"></h3>
+        <p data-template-id="score-text" class="canva-text mt-2 font-bold leading-relaxed"></p>
+       </article>
+      </div>
+      <div class="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+       <button id="rules-play" data-template-id="rules-play-button" type="button" class="canva-button action-btn rounded-2xl bg-[#f28b2b] px-6 py-4 font-extrabold text-white"></button> <button id="rules-back" data-template-id="rules-back-button" type="button" class="canva-button action-btn rounded-2xl bg-[#329d67] px-6 py-4 font-extrabold text-white"></button>
+      </div>
+     </div>
+    </section>
+    <section id="game-screen" class="screen flex-col">
+     <header class="topbar px-3 py-3">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-2 md:justify-between">
+       <div class="stat-pill rounded-2xl px-3 py-2 text-center font-bold"><span class="stat-label">👤 Người chơi: </span><span id="stat-name"></span>
+       </div>
+       <div class="stat-pill rounded-2xl px-3 py-2 text-center font-bold"><span class="stat-label">⭐ Điểm: </span><span id="stat-score">000</span>
+       </div>
+       <div class="stat-pill rounded-2xl px-3 py-2 text-center font-bold"><span class="stat-label">❤️ Lượt: </span><span id="stat-lives">3</span>
+       </div>
+       <div class="stat-pill rounded-2xl px-3 py-2 text-center font-bold"><span class="stat-label">🗑️ Rác: </span><span id="stat-count">0/10</span>
+       </div>
+       <div class="stat-pill rounded-2xl px-3 py-2 text-center font-bold"><span class="stat-label">⏱️ </span><span id="stat-time">90 giây</span>
+       </div><button id="sound-game" data-template-id="game-sound-button" type="button" class="canva-button rounded-xl bg-[#7b62c7] px-3 py-2 font-bold text-white"></button>
+      </div>
+      <div class="timer-bar mx-auto mt-3 max-w-6xl">
+       <div id="timer-fill" class="timer-fill"></div>
+      </div>
+     </header>
+     <div class="relative mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 pb-4">
+      <div id="feedback" class="feedback"><strong id="feedback-title" class="block text-2xl"></strong><span id="feedback-points" class="font-extrabold"></span>
+      </div>
+      <div class="item-zone flex-1">
+       <div id="item-bread" class="game-item current" data-category="organic">
+        <div class="trash-item text-center">
+         <div class="trash-art">
+          <svg viewbox="0 0 230 210" aria-hidden="true"><path d="M31 126 Q20 80 55 45 Q88 12 150 34 Q198 52 190 112 Q178 164 103 166 Q52 164 31 126Z" fill="#e7a544" stroke="#914d22" stroke-width="8" /><path d="M172 55 Q203 50 207 73 Q218 85 199 94 Q215 110 198 124 Q181 132 174 111" fill="#bceaff" /><path d="M67 72 Q87 55 104 65 M65 107 Q85 90 102 100 M117 57 Q140 45 156 61" fill="none" stroke="#f8d57c" stroke-width="11" stroke-linecap="round" /><circle cx="52" cy="179" r="7" fill="#db9b3d" /><circle cx="76" cy="188" r="5" fill="#db9b3d" />
+          </svg>
+         </div>
+         <p data-template-id="item-bread-label" class="canva-text trash-name rounded-2xl px-5 py-3 text-xl font-extrabold"></p>
+        </div>
+       </div>
+       <div id="item-leaves" class="game-item" data-category="organic">
+        <div class="trash-item text-center">
+         <div class="trash-art">
+          <svg viewbox="0 0 230 210" aria-hidden="true"><path d="M37 157 Q30 83 113 43 Q132 124 57 168Z" fill="#56b85b" stroke="#247046" stroke-width="7" /><path d="M48 151 Q85 117 113 43 M71 128 L54 109 M82 105 L103 93" stroke="#e2f6a1" stroke-width="6" fill="none" /><path d="M100 178 Q105 95 192 77 Q190 159 114 189Z" fill="#319a56" stroke="#247046" stroke-width="7" /><path d="M113 177 Q151 128 192 77 M139 144 L160 143 M151 120 L168 109" stroke="#d8f59e" stroke-width="6" fill="none" />
+          </svg>
+         </div>
+         <p data-template-id="item-leaves-label" class="canva-text trash-name rounded-2xl px-5 py-3 text-xl font-extrabold"></p>
+        </div>
+       </div>
+       <div id="item-apple" class="game-item" data-category="organic">
+        <div class="trash-item text-center">
+         <div class="trash-art">
+          <svg viewbox="0 0 230 210" aria-hidden="true"><path d="M121 49 Q116 23 135 15" stroke="#6c4827" stroke-width="10" fill="none" stroke-linecap="round" /><path d="M135 28 Q162 4 183 28 Q159 52 135 40Z" fill="#48a85d" stroke="#257044" stroke-width="6" /><path d="M114 60 Q151 35 179 67 Q203 96 180 151 Q159 189 114 181 Q68 191 44 151 Q23 95 49 68 Q77 38 114 60Z" fill="#ec4f48" stroke="#a83835" stroke-width="8" /><path d="M69 79 Q52 109 67 123" stroke="#ffaaa0" stroke-width="10" fill="none" stroke-linecap="round" />
+          </svg>
+         </div>
+         <p data-template-id="item-apple-label" class="canva-text trash-name rounded-2xl px-5 py-3 text-xl font-extrabold"></p>
+        </div>
+       </div>
+       <div id="item-milk" class="game-item" data-category="recycle">
+        <div class="trash-item text-center">
+         <div class="trash-art">
+          <svg viewbox="0 0 230 210" aria-hidden="true"><path d="M66 45 L115 23 L165 48 L157 175 L70 175Z" fill="#e7f4ff" stroke="#3475aa" stroke-width="8" /><path d="M66 45 L94 68 L165 48 M94 68 L92 28" fill="#9dd5ee" stroke="#3475aa" stroke-width="7" /><path d="M101 83 Q125 68 149 83 L147 131 Q125 145 102 131Z" fill="#65bfea" /><text x="125" y="115" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">
+            SỮA
+           </text><path d="M93 154 L143 154" stroke="#73b6d8" stroke-width="7" />
+          </svg>
+         </div>
+         <p data-template-id="item-milk-label" class="canva-text trash-name rounded-2xl px-5 py-3 text-xl font-extrabold"></p>
+        </div>
+       </div>
+       <div id="item-box" class="game-item" data-category="recycle">
+        <div class="trash-item text-center">
+         <div class="trash-art">
+          <svg viewbox="0 0 230 210" aria-hidden="true"><path d="M43 80 L91 47 L182 71 L145 112 L82 118Z" fill="#d79a50" stroke="#89542d" stroke-width="8" /><path d="M43 80 L82 118 L81 180 L44 142Z" fill="#bd7b3d" stroke="#89542d" stroke-width="8" /><path d="M82 118 L145 112 L182 71 L179 143 L143 180 L81 180Z" fill="#e5ae65" stroke="#89542d" stroke-width="8" /><path d="M83 118 L143 146 L179 112 M143 146 L143 180" fill="none" stroke="#b77638" stroke-width="6" />
+          </svg>
+         </div>
+         <p data-template-id="item-box-label" class="canva-text trash-name rounded-2xl px-5 py-3 text-xl font-extrabold"></p>
+        </div>
+       </div>
+       <div id="item-newspaper" class="game-item" data-category="recycle">
+        <div class="trash-item text-center">
+         <div class="trash-art">
+          <svg viewbox="0 0 230 210" aria-hidden="true"><path d="M48 30 L177 48 L163 181 L34 163Z" fill="#fffdf0" stroke="#62737a" stroke-width="7" /><path d="M59 56 L145 68 M57 73 L140 84 M54 91 L88 96 M106 98 L136 102 M51 111 L145 124 M48 130 L141 143 M45 148 L116 158" stroke="#73848a" stroke-width="6" /><rect x="101" y="70" width="49" height="28" rx="2" fill="#8ac6dd" /><text x="111" y="55" font-size="18" font-weight="800" fill="#334f58">
+            TIN MỚI
+           </text>
+          </svg>
+         </div>
+         <p data-template-id="item-newspaper-label" class="canva-text trash-name rounded-2xl px-5 py-3 text-xl font-extrabold"></p>
+        </div>
+       </div>
+       <div id="item-bottle" class="game-item" data-category="recycle">
+        <div class="trash-item text-center">
+         <div class="trash-art">
+          <svg viewbox="0 0 230 210" aria-hidden="true"><path d="M100 27 L132 27 L137 59 Q157 79 151 164 Q150 183 115 185 Q80 183 79 164 Q73 79 94 59Z" fill="#9eddf1aa" stroke="#2785b9" stroke-width="8" /><path d="M99 25 L133 25 L132 43 L100 43Z" fill="#3f88ac" stroke="#236789" stroke-width="6" /><path d="M83 99 Q115 113 149 99 L150 132 Q114 145 80 132Z" fill="#56bce4" /><path d="M96 68 L134 68 M93 151 L137 151" stroke="#fff" stroke-width="6" opacity=".8" />
+          </svg>
+         </div>
+         <p data-template-id="item-bottle-label" class="canva-text trash-name rounded-2xl px-5 py-3 text-xl font-extrabold"></p>
+        </div>
+       </div>
+       <div id="item-bag" class="game-item" data-category="remaining">
+        <div class="trash-item text-center">
+         <div class="trash-art">
+          <svg viewbox="0 0 230 210" aria-hidden="true"><path d="M75 65 Q75 25 99 28 Q108 30 105 63 M126 63 Q124 27 143 29 Q163 35 159 73" fill="none" stroke="#bfcad0" stroke-width="12" stroke-linecap="round" /><path d="M55 74 Q112 52 178 74 L165 169 Q112 190 60 166Z" fill="#dfe8ea" stroke="#83979c" stroke-width="8" /><path d="M69 91 L153 157 M153 91 L72 151 M111 72 L112 175" stroke="#b2c3c8" stroke-width="6" opacity=".8" />
+          </svg>
+         </div>
+         <p data-template-id="item-bag-label" class="canva-text trash-name rounded-2xl px-5 py-3 text-xl font-extrabold"></p>
+        </div>
+       </div>
+       <div id="item-bulb" class="game-item" data-category="remaining">
+        <div class="trash-item text-center">
+         <div class="trash-art">
+          <svg viewbox="0 0 230 210" aria-hidden="true"><path d="M122 27 Q174 28 177 80 Q178 112 151 137 L148 158 L96 158 L92 137 Q65 111 68 78 Q70 28 122 27Z" fill="#ffeb8b" stroke="#8e7d51" stroke-width="8" /><path d="M94 165 L151 165 L146 187 L99 187Z" fill="#92989a" stroke="#5c676b" stroke-width="7" /><path d="M100 102 L143 55 M102 55 L144 103" stroke="#e6534d" stroke-width="9" stroke-linecap="round" /><path d="M104 143 L139 143" stroke="#8e7d51" stroke-width="5" />
+          </svg>
+         </div>
+         <p data-template-id="item-bulb-label" class="canva-text trash-name rounded-2xl px-5 py-3 text-xl font-extrabold"></p>
+        </div>
+       </div>
+       <div id="item-battery" class="game-item" data-category="remaining">
+        <div class="trash-item text-center">
+         <div class="trash-art">
+          <svg viewbox="0 0 230 210" aria-hidden="true"><rect x="65" y="47" width="96" height="123" rx="14" fill="#67737a" stroke="#37464b" stroke-width="8" /><path d="M93 47 L93 34 L133 34 L133 47" fill="#4d5a60" stroke="#37464b" stroke-width="7" /><rect x="76" y="69" width="74" height="63" rx="5" fill="#eff1d9" /><text x="113" y="110" text-anchor="middle" font-size="36" font-weight="800" fill="#d85048">
+            −
+           </text><path d="M80 146 L145 146" stroke="#9ca7a0" stroke-width="7" />
+          </svg>
+         </div>
+         <p data-template-id="item-battery-label" class="canva-text trash-name rounded-2xl px-5 py-3 text-xl font-extrabold"></p>
+        </div>
+       </div>
+      </div>
+      <div class="guide-bubble mx-auto mb-4 flex max-w-lg items-center gap-3 rounded-2xl p-3">
+       <span class="text-3xl">🌱</span>
+       <p id="guide-text" class="font-bold">Kéo vật rác vào đúng thùng nhé!</p>
+      </div>
+      <div class="grid grid-cols-3 gap-3 md:gap-6">
+       <div id="bin-organic" class="bin bg-[#f28b2b] p-3 text-center text-white" data-category="organic"><i data-lucide="apple" class="bin-icon"></i>
+        <h3 data-template-id="organic-bin-title" class="canva-text mt-1 font-extrabold"></h3>
+        <p data-template-id="organic-bin-detail" class="canva-text mt-2 hidden font-semibold"></p>
+       </div>
+       <div id="bin-recycle" class="bin bg-[#278bd7] p-3 text-center text-white" data-category="recycle"><i data-lucide="recycle" class="bin-icon"></i>
+        <h3 data-template-id="recycle-bin-title" class="canva-text mt-1 font-extrabold"></h3>
+        <p data-template-id="recycle-bin-detail" class="canva-text mt-2 hidden font-semibold"></p>
+       </div>
+       <div id="bin-remaining" class="bin bg-[#e54b4b] p-3 text-center text-white" data-category="remaining"><i data-lucide="trash-2" class="bin-icon"></i>
+        <h3 data-template-id="remaining-bin-title" class="canva-text mt-1 font-extrabold"></h3>
+        <p data-template-id="remaining-bin-detail" class="canva-text mt-2 hidden font-semibold"></p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section id="result-screen" class="screen items-center justify-center p-5">
+     <div class="modal-card w-full max-w-2xl rounded-[35px] p-7 text-center md:p-10">
+      <div id="result-icon" class="text-6xl">
+       🏆
+      </div>
+      <h2 id="result-title" class="hero-title mt-3 text-3xl font-extrabold text-[#22744a]"></h2>
+      <p id="result-message" class="mt-3 text-lg font-bold"></p>
+      <div class="my-6 grid grid-cols-3 gap-3">
+       <div class="rounded-2xl bg-[#effbe0] p-3"><span class="block text-xs font-bold">NGƯỜI CHƠI</span><strong id="result-name"></strong>
+       </div>
+       <div class="rounded-2xl bg-[#fff1df] p-3"><span class="block text-xs font-bold">ĐIỂM</span><strong id="result-score"></strong>
+       </div>
+       <div class="rounded-2xl bg-[#e2f4ff] p-3"><span class="block text-xs font-bold">ĐÃ PHÂN LOẠI</span><strong id="result-count"></strong>
+       </div>
+      </div>
+      <p id="result-extra" class="mb-6 font-bold text-[#317246]"></p>
+      <div class="flex flex-col justify-center gap-3 sm:flex-row">
+       <button id="result-replay" data-template-id="result-replay-button" type="button" class="canva-button action-btn rounded-2xl bg-[#f28b2b] px-5 py-3 font-extrabold text-white"></button> <button id="result-ranking" data-template-id="result-ranking-button" type="button" class="canva-button action-btn rounded-2xl bg-[#278bd7] px-5 py-3 font-extrabold text-white"></button> <button id="result-home" data-template-id="result-home-button" type="button" class="canva-button action-btn rounded-2xl bg-[#329d67] px-5 py-3 font-extrabold text-white"></button>
+      </div>
+     </div>
+    </section>
+    <section id="leaderboard-screen" class="screen items-center justify-center p-5">
+     <div class="modal-card w-full max-w-2xl rounded-[35px] p-7 md:p-10">
+      <h2 data-template-id="leaderboard-title" class="canva-text hero-title text-center text-3xl font-extrabold text-[#22744a]"></h2>
+      <p data-template-id="leaderboard-helper" class="canva-text mt-2 text-center"></p>
+      <div class="mt-5 overflow-x-auto">
+       <table class="ranking-table w-full text-left">
+        <thead>
+         <tr>
+          <th>Hạng</th>
+          <th>Người chơi</th>
+          <th>Điểm</th>
+         </tr>
+        </thead>
+        <tbody id="leaderboard-body"></tbody>
+       </table>
+      </div>
+      <div class="mt-6 flex justify-center gap-3">
+       <button id="leader-replay" data-template-id="leader-replay-button" type="button" class="canva-button action-btn rounded-2xl bg-[#f28b2b] px-5 py-3 font-extrabold text-white"></button> <button id="leader-home-back" data-template-id="leader-home-button" type="button" class="canva-button action-btn rounded-2xl bg-[#329d67] px-5 py-3 font-extrabold text-white"></button>
+      </div>
+     </div>
+    </section>
+   </main>
+  </div>
+  <script src="/_sdk/22383239e6d7279e.editing_sdk.js" integrity="sha512-qvtUeUgPbBuWkcjob5tx6AGU1PQHkx4zgZWqqpaXOQqF0FGg35lPkDg2Eh+f2u6Np/H74EENvDhGRPcQgwZA+Q=="></script>
+  <script>
+    const screens = document.querySelectorAll('.screen');
+    const items = [...document.querySelectorAll('.game-item')];
+    const bins = [...document.querySelectorAll('.bin')];
+    let playOrder = [...items];
+    let playerName = '', score = 0, lives = 3, currentIndex = 0, timeLeft = 90, timer = null, acceptingDrop = true;
+    let soundOn = true, audioCtx = null, musicTimer = null;
+
+    function showScreen(id) {
+      screens.forEach(s => s.classList.toggle('active', s.id === id));
+      if (id !== 'game-screen') stopTimer();
+    }
+    function clickSound() { tone(530, .07, 'sine', .035); }
+    function tone(freq, duration, type='sine', volume=.05) {
+      if (!soundOn) return;
+      try {
+        audioCtx ||= new (window.AudioContext || window.webkitAudioContext)();
+        const osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
+        osc.type = type; osc.frequency.value = freq; gain.gain.setValueAtTime(volume, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(.001, audioCtx.currentTime + duration);
+        osc.connect(gain).connect(audioCtx.destination); osc.start(); osc.stop(audioCtx.currentTime + duration);
+      } catch(e) {}
+    }
+    function correctSound(){ [523,659,784].forEach((n,i)=>setTimeout(()=>tone(n,.15,'triangle',.06),i*105)); }
+    function wrongSound(){ tone(180,.24,'sawtooth',.05); setTimeout(()=>tone(130,.28,'sawtooth',.04),120); }
+    function startMusic() {
+      stopMusic(); if(!soundOn) return;
+      let notes=[262,330,392,330,294,349,440,349], n=0;
+      musicTimer=setInterval(()=>{ tone(notes[n++%notes.length],.16,'sine',.018); },420);
+    }
+    function stopMusic(){ if(musicTimer) clearInterval(musicTimer); musicTimer=null; }
+    function toggleSound() {
+      soundOn=!soundOn;
+      ['sound-home','sound-game'].forEach(id=>{ const b=document.getElementById(id); if(b) b.textContent=soundOn?'🔊 ÂM THANH BẬT':'🔇 ÂM THANH TẮT'; });
+      if(soundOn && document.getElementById('game-screen').classList.contains('active')) startMusic(); else if(!soundOn) stopMusic();
+      if(soundOn) clickSound();
+    }
+    function updateStats() {
+      document.getElementById('stat-name').textContent=playerName;
+      document.getElementById('stat-score').textContent=String(score).padStart(3,'0');
+      document.getElementById('stat-lives').textContent='❤️'.repeat(lives) || '0';
+      document.getElementById('stat-count').textContent=`${currentIndex}/10`;
+      document.getElementById('stat-time').textContent=`${timeLeft} giây`;
+      const fill=document.getElementById('timer-fill'); fill.style.width=`${(timeLeft/90)*100}%`; fill.classList.toggle('urgent',timeLeft<=20);
+    }
+    function startTimer() {
+      stopTimer(); timer=setInterval(()=>{ timeLeft--; updateStats(); if(timeLeft<=0) endGame('time'); },1000);
+    }
+    function stopTimer(){ if(timer) clearInterval(timer); timer=null; }
+    function showItem() {
+      items.forEach(item=>item.classList.remove('current'));
+      playOrder[currentIndex].classList.add('current');
+      acceptingDrop=true; document.getElementById('guide-text').textContent='Kéo vật rác vào đúng thùng nhé!';
+      updateStats();
+    }
+    function startGame() {
+      score=0;lives=3;currentIndex=0;timeLeft=90;acceptingDrop=true;
+      playOrder=[...items].sort(()=>Math.random()-.5);
+      showScreen('game-screen');showItem();startTimer();startMusic();tone(440,.16,'triangle',.06);setTimeout(()=>tone(660,.2,'triangle',.06),150);
+    }
+    function feedback(ok) {
+      const box=document.getElementById('feedback');
+      document.getElementById('feedback-title').textContent=ok?'🎉 CHÍNH XÁC!':'❌ CHƯA ĐÚNG!';
+      document.getElementById('feedback-title').style.color=ok?'#229157':'#d34242';
+      document.getElementById('feedback-points').textContent=ok?'+10 ĐIỂM':'-5 ĐIỂM';
+      box.classList.remove('show'); void box.offsetWidth; box.classList.add('show');
+    }
+    function sparkle() {
+      const zone=document.querySelector('.item-zone');
+      for(let i=0;i<12;i++){let s=document.createElement('span');s.className='spark';s.textContent=i%2?'✨':'⭐';s.style.left='50%';s.style.top='45%';s.style.setProperty('--x',`${(Math.random()-.5)*330}px`);s.style.setProperty('--y',`${(Math.random()-.5)*230}px`);zone.appendChild(s);setTimeout(()=>s.remove(),950);}
+    }
+    function handleDrop(category, bin) {
+      if(!acceptingDrop) return;
+      const item=playOrder[currentIndex], correct=item.dataset.category===category;
+      acceptingDrop=false;
+      if(correct) {
+        score+=10; feedback(true); correctSound(); sparkle(); bin.classList.add('active-drop');
+        document.getElementById('guide-text').textContent='Giỏi lắm! Em đã phân loại đúng!';
+        item.querySelector('.trash-item').style.transform='scale(.25) translateY(330px)'; item.querySelector('.trash-item').style.opacity='0';
+        setTimeout(()=>{bin.classList.remove('active-drop');item.querySelector('.trash-item').style.transform='';item.querySelector('.trash-item').style.opacity='';currentIndex++;if(currentIndex>=10) endGame('complete');else showItem();},900);
+      } else {
+        score=Math.max(0,score-5); lives--; feedback(false); wrongSound(); bin.classList.add('wrong-drop');
+        const card=item.querySelector('.trash-item'); card.classList.add('returning');
+        document.getElementById('guide-text').textContent='Hãy quan sát và thử lại nhé!';
+        updateStats(); setTimeout(()=>{bin.classList.remove('wrong-drop');card.classList.remove('returning');acceptingDrop=lives>0;if(lives<=0)endGame('lives');},650);
+      }
+      updateStats();
+    }
+    function endGame(reason) {
+      stopTimer();stopMusic();acceptingDrop=false;
+      const complete=reason==='complete', win=complete&&score>=80;
+      document.getElementById('result-icon').textContent=win?'🏆':complete?'💚':'⏰';
+      document.getElementById('result-title').textContent=win?'🎉 CHÚC MỪNG!':complete?'💚 CỐ GẮNG LÊN!':'⏰ GAME OVER';
+      document.getElementById('result-message').textContent=win?'🌱 EM LÀ NGƯỜI HÙNG XANH!':complete?'Em đã hoàn thành thử thách. Hãy chơi lại để đạt điểm cao hơn nhé!':reason==='time'?'Thời gian đã hết!':'Em đã hết lượt!';
+      document.getElementById('result-name').textContent=playerName;
+      document.getElementById('result-score').textContent=score;
+      document.getElementById('result-count').textContent=`${currentIndex}/10`;
+      document.getElementById('result-extra').textContent=complete?`Lượt còn lại: ${lives} ❤️ — Cảm ơn em đã góp phần bảo vệ môi trường!`:'Hãy thử lại để làm công viên xanh sạch hơn nhé!';
+      saveScore(); showScreen('result-screen');
+      if(win){correctSound();setTimeout(confetti,250);}
+      else tone(complete?390:160,.4,complete?'triangle':'sawtooth',.06);
+    }
+    function confetti(){['#f28b2b','#278bd7','#e54b4b','#58b85e','#ffe15d'].forEach((c,index)=>{for(let i=0;i<9;i++){const p=document.createElement('i');p.className='confetti';p.style.background=c;p.style.left=`${Math.random()*100}%`;p.style.setProperty('--x',`${(Math.random()-.5)*280}px`);p.style.animationDelay=`${index*35+i*22}ms`;document.body.appendChild(p);setTimeout(()=>p.remove(),3000)}});}
+    function saveScore() {
+      try { const scores=JSON.parse(localStorage.getItem('greenHeroScores')||'[]'); scores.push({name:playerName,score,date:Date.now()}); scores.sort((a,b)=>b.score-a.score||b.date-a.date); localStorage.setItem('greenHeroScores',JSON.stringify(scores.slice(0,10))); } catch(e){}
+    }
+    function renderLeaderboard() {
+      let scores=[]; try{scores=JSON.parse(localStorage.getItem('greenHeroScores')||'[]')}catch(e){}
+      if(!scores.length) scores=[{name:'Người Hùng Mẫu',score:100},{name:'Bạn Nhỏ Xanh',score:90},{name:'Lá Non',score:80}];
+      const medals=['🥇','🥈','🥉'];
+      document.getElementById('leaderboard-body').innerHTML=scores.slice(0,10).map((s,i)=>`<tr><td>${medals[i]||i+1}</td><td>${escapeHTML(s.name)}</td><td>${s.score}</td></tr>`).join('');
+    }
+    function escapeHTML(text){const d=document.createElement('div');d.textContent=text;return d.innerHTML;}
+    function showLeaderboard(){renderLeaderboard();showScreen('leaderboard-screen');clickSound();}
+
+    document.getElementById('start-home').onclick=()=>{showScreen('name-screen');clickSound();};
+    document.getElementById('rules-home').onclick=()=>{showScreen('rules-screen');clickSound();};
+    document.getElementById('leader-home').onclick=showLeaderboard;
+    document.getElementById('sound-home').onclick=toggleSound; document.getElementById('sound-game').onclick=toggleSound;
+    document.getElementById('name-back').onclick=()=>{showScreen('home-screen');clickSound();};
+    document.getElementById('rules-back').onclick=()=>{showScreen('home-screen');clickSound();};
+    document.getElementById('rules-play').onclick=()=>{showScreen('name-screen');clickSound();};
+    document.getElementById('name-form').addEventListener('submit',e=>{e.preventDefault();const input=document.getElementById('player-name');playerName=input.value.trim();const err=document.getElementById('name-error');if(!playerName){err.textContent='Em hãy nhập tên người hùng trước nhé!';err.classList.remove('hidden');input.focus();return;}err.classList.add('hidden');startGame();});
+    document.getElementById('result-replay').onclick=()=>{showScreen('name-screen');clickSound();};
+    document.getElementById('result-ranking').onclick=showLeaderboard;
+    document.getElementById('result-home').onclick=()=>{showScreen('home-screen');clickSound();};
+    document.getElementById('leader-replay').onclick=()=>{showScreen('name-screen');clickSound();};
+    document.getElementById('leader-home-back').onclick=()=>{showScreen('home-screen');clickSound();};
+
+    let dragging=null, offsetX=0, offsetY=0;
+    document.querySelectorAll('.trash-item').forEach(card=>{
+      card.addEventListener('pointerdown',e=>{
+        if(!acceptingDrop||!card.closest('.game-item').classList.contains('current'))return;
+        dragging=card; const r=card.getBoundingClientRect();offsetX=e.clientX-r.left;offsetY=e.clientY-r.top;card.setPointerCapture(e.pointerId);card.classList.add('dragging');tone(320,.06,'sine',.025);
+      });
+      card.addEventListener('pointermove',e=>{
+        if(dragging!==card)return;
+        card.style.position='fixed';card.style.left=`${e.clientX-offsetX}px`;card.style.top=`${e.clientY-offsetY}px`;card.style.width=`${card.getBoundingClientRect().width}px`;
+        bins.forEach(bin=>{const r=bin.getBoundingClientRect();const inside=e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom;bin.classList.toggle('active-drop',inside);});
+      });
+      card.addEventListener('pointerup',e=>{
+        if(dragging!==card)return;
+        let target=bins.find(bin=>{const r=bin.getBoundingClientRect();return e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom;});
+        card.classList.remove('dragging');card.style.position='';card.style.left='';card.style.top='';card.style.width='';bins.forEach(b=>b.classList.remove('active-drop'));dragging=null;
+        if(target)handleDrop(target.dataset.category,target);
+      });
+    });
+    lucide.createIcons();
+  </script>
+ </body>
+</html>
