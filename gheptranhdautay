@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="vi">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260918-05-13efa67","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/83d6dfdadcd4750a.telemetry_sdk.js" integrity="sha512-XS4Dvzp6vbagZS9vFErihvr8aO3S0tH78KWUefn06fmL4WYqryBtZj/IOLITYj7dFA4gPVvPg1W/JB1DK3uLNQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghép Tranh – Toán Học</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&amp;family=Fraunces:opsz,wght@9..144,700;9..144,800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --berry: #ef4444;
+      --berry-dark: #be123c;
+      --leaf: #3c9d55;
+      --sky: #dff5ff;
+      --ink: #244333;
+      --cream: #fffdf4;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      font-family: "DM Sans", sans-serif;
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    .garden-shell {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 7% 8%, rgba(255,255,255,.86) 0 16px, transparent 17px),
+        radial-gradient(circle at 13% 9%, rgba(255,255,255,.75) 0 23px, transparent 24px),
+        radial-gradient(circle at 87% 14%, rgba(255,255,255,.74) 0 22px, transparent 23px),
+        linear-gradient(180deg, #bdeeff 0%, #e7f9ff 45%, #e5f7c9 45%, #d2efa9 100%);
+    }
+
+    .garden-shell::before,
+    .garden-shell::after {
+      content: "✿  🍓  ✿  🍓  ✿  🍓";
+      position: absolute;
+      color: rgba(239,68,68,.2);
+      letter-spacing: 22px;
+      font-size: 28px;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+    .garden-shell::before { top: 112px; left: -30px; transform: rotate(-4deg); }
+    .garden-shell::after { bottom: 18px; right: -50px; transform: rotate(5deg); }
+
+    .title-font { font-family: "Fraunces", serif; }
+    .game-card {
+      background: rgba(255, 253, 244, .94);
+      border: 4px solid #ffffff;
+      box-shadow: 0 15px 0 rgba(52, 122, 71, .12), 0 22px 38px rgba(33, 87, 57, .13);
+    }
+
+    .puzzle-frame {
+      width: min(100%, 520px);
+      aspect-ratio: 1.32 / 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+      padding: 8px;
+      background: #fff;
+      border: 7px solid #eab65b;
+      border-radius: 28px;
+      box-shadow: 0 12px 0 #cd8b37, 0 20px 30px rgba(93, 70, 28, .2);
+      position: relative;
+    }
+
+    .puzzle-cell {
+      overflow: hidden;
+      position: relative;
+      border-radius: 15px;
+      background:
+        radial-gradient(circle at 25% 30%, #fff9d4 0 3px, transparent 4px),
+        linear-gradient(135deg, #84c85d, #50a75a);
+      border: 3px dashed rgba(255,255,255,.88);
+    }
+    .puzzle-cell::after {
+      content: "🍓";
+      position: absolute;
+      font-size: 32px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: .65;
+      transition: opacity .3s ease;
+      z-index: 2;
+    }
+    .puzzle-cell.revealed::after { opacity: 0; }
+    .puzzle-cell img {
+      position: absolute;
+      width: 300%;
+      height: 100%;
+      max-width: none;
+      object-fit: cover;
+      top: 0;
+      opacity: 0;
+      transition: opacity .5s ease, transform .55s cubic-bezier(.2,.8,.3,1);
+      transform: scale(1.13);
+    }
+    .puzzle-cell.revealed img { opacity: 1; transform: scale(1); }
+    .piece-one img { left: 0; }
+    .piece-two img { left: -100%; }
+    .piece-three img { left: -200%; }
+
+    .sparkle {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0;
+    }
+    .puzzle-cell.just-revealed .sparkle {
+      opacity: 1;
+      animation: sparkle .75s ease-out;
+    }
+    .sparkle span { position: absolute; font-size: 25px; }
+    .sparkle span:nth-child(1) { left: 20%; top: 20%; }
+    .sparkle span:nth-child(2) { right: 14%; top: 36%; animation-delay: .08s; }
+    .sparkle span:nth-child(3) { left: 44%; bottom: 12%; animation-delay: .16s; }
+    @keyframes sparkle {
+      0% { transform: scale(.4) rotate(-25deg); opacity: 0; }
+      35% { opacity: 1; }
+      100% { transform: scale(1.45) rotate(20deg); opacity: 0; }
+    }
+
+    .progress-track {
+      height: 16px;
+      background: #e5f0d4;
+      border: 3px solid #b8d994;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #f59e0b, #ef4444);
+      transition: width .45s ease;
+    }
+
+    .question-panel { display: none; }
+    .question-panel.active { display: block; animation: rise .36s ease both; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px) scale(.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .answer {
+      border: 3px solid rgba(36, 67, 51, .12);
+      box-shadow: 0 5px 0 rgba(36, 67, 51, .14);
+      transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+    }
+    .answer:hover { transform: translateY(-3px); box-shadow: 0 8px 0 rgba(36, 67, 51, .14); filter: brightness(1.04); }
+    .answer:focus-visible, .sound-toggle:focus-visible, .replay-button:focus-visible {
+      outline: 4px solid #1d70d8;
+      outline-offset: 4px;
+    }
+    .answer.correct-flash { animation: correct .55s ease; }
+    .answer.wrong-shake { animation: shake .42s ease; }
+    @keyframes correct {
+      50% { transform: scale(1.05); filter: brightness(1.18); }
+    }
+    @keyframes shake {
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+
+    .feedback { display: none; }
+    .feedback.visible { display: flex; animation: rise .25s ease; }
+
+    .win-screen {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+      background: rgba(27, 92, 65, .55);
+      backdrop-filter: blur(5px);
+    }
+    .win-screen.visible { display: flex; }
+    .win-card { animation: pop .55s cubic-bezier(.18,.89,.32,1.28) both; }
+    @keyframes pop { from { transform: scale(.65); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+    .confetti { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    .confetti i {
+      position: absolute;
+      width: 11px;
+      height: 19px;
+      top: -28px;
+      border-radius: 3px;
+      animation: fall 3.2s linear infinite;
+    }
+    .confetti i:nth-child(1) { left: 8%; background:#ef4444; animation-delay:.1s; }
+    .confetti i:nth-child(2) { left: 19%; background:#fbbf24; animation-delay:.8s; }
+    .confetti i:nth-child(3) { left: 31%; background:#34d399; animation-delay:.3s; }
+    .confetti i:nth-child(4) { left: 45%; background:#60a5fa; animation-delay:1.2s; }
+    .confetti i:nth-child(5) { left: 58%; background:#f472b6; animation-delay:.5s; }
+    .confetti i:nth-child(6) { left: 73%; background:#fbbf24; animation-delay:1.5s; }
+    .confetti i:nth-child(7) { left: 86%; background:#34d399; animation-delay:.6s; }
+    .confetti i:nth-child(8) { left: 95%; background:#ef4444; animation-delay:1.7s; }
+    @keyframes fall {
+      to { transform: translateY(calc(100 * min(var(--vh, 1vh), 1vh))) rotate(560deg); }
+    }
+
+    @media (max-width: 860px) {
+      .game-main { grid-template-columns: 1fr !important; }
+      .puzzle-frame { max-width: 460px; margin-inline: auto; }
+    }
+  </style>
+  <script src="/_sdk/8de366929c5f3b48.data_sdk.js" type="text/javascript" integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
+  <script src="/_sdk/765e1fea0cec97ce.resizing_sdk.js" type="text/javascript" integrity="sha512-IRTJnqww0+HQ5V/LlWEQrlD5SrYHaVvaeVoNe8HYQXoaguzUGheSd9+n9s6WOgaTcEH0g37DuINHZ9aqfzWjlw=="></script>
+ </head>
+ <body data-template-id="__page-root">
+  <div class="garden-shell">
+   <header class="relative z-10 w-full px-4 pt-5 sm:px-7">
+    <div data-template-id="game-header" class="canva-header mx-auto flex w-full max-w-6xl items-center justify-between gap-4 rounded-[26px] px-5 py-4 sm:px-7">
+     <h1 data-template-id="game-title" class="canva-text title-font text-center leading-tight"></h1><button id="sound-toggle" class="sound-toggle shrink-0 rounded-full bg-white p-3 text-[#3c9d55] shadow-md transition hover:scale-105" type="button" aria-label="Bật hoặc tắt âm thanh" aria-pressed="true"> <i data-lucide="volume-2" width="24" height="24"></i> </button>
+    </div>
+   </header>
+   <main class="relative z-10 mx-auto w-full max-w-6xl px-4 pb-10 pt-5 sm:px-7">
+    <section class="mx-auto mb-5 max-w-4xl">
+     <div class="flex items-center justify-between gap-4">
+      <p data-template-id="progress-label" class="canva-text font-extrabold"></p>
+      <p id="progress-count" class="rounded-full bg-white px-4 py-2 font-extrabold text-[#be123c]" aria-live="polite">0/3</p>
+     </div>
+     <div class="progress-track mt-2" aria-label="Tiến trình ghép tranh">
+      <div id="progress-fill" class="progress-fill"></div>
+     </div>
+    </section>
+    <div class="game-main grid grid-cols-[1.03fr_.97fr] items-center gap-7">
+     <section data-template-id="puzzle-section" class="canva-section game-card rounded-[32px] p-5 sm:p-7" aria-labelledby="puzzle-heading">
+      <div class="mb-4 flex items-center gap-3"><span class="flex h-11 w-11 items-center justify-center rounded-full bg-[#ffe5a4] text-2xl">🍓</span>
+       <div>
+        <h2 id="puzzle-heading" data-template-id="puzzle-heading-text" class="canva-text title-font"></h2>
+        <p data-template-id="puzzle-helper" class="canva-text mt-1 font-medium"></p>
+       </div>
+      </div>
+      <div class="puzzle-frame" aria-label="Bức tranh vườn dâu gồm ba mảnh ghép">
+       <div id="piece-1" data-template-id="puzzle-piece-1" class="canva-card puzzle-cell piece-one"><img data-template-id="puzzle-image-1" class="canva-image" loading="lazy">
+        <div class="sparkle" aria-hidden="true">
+         <span>✦</span><span>✧</span><span>★</span>
+        </div>
+       </div>
+       <div id="piece-2" data-template-id="puzzle-piece-2" class="canva-card puzzle-cell piece-two"><img data-template-id="puzzle-image-2" class="canva-image" loading="lazy">
+        <div class="sparkle" aria-hidden="true">
+         <span>✦</span><span>✧</span><span>★</span>
+        </div>
+       </div>
+       <div id="piece-3" data-template-id="puzzle-piece-3" class="canva-card puzzle-cell piece-three"><img data-template-id="puzzle-image-3" class="canva-image" loading="lazy">
+        <div class="sparkle" aria-hidden="true">
+         <span>✦</span><span>✧</span><span>★</span>
+        </div>
+       </div>
+      </div>
+     </section>
+     <section aria-label="Câu hỏi toán học">
+      <div id="question-panel-1" class="question-panel active game-card rounded-[32px] p-6 sm:p-8">
+       <p data-template-id="piece-label-1" class="canva-tag inline-flex rounded-full px-4 py-2 font-extrabold"></p>
+       <h2 data-template-id="question-1" class="canva-text title-font mt-6 text-center"></h2>
+       <div class="mt-7 grid gap-3"><button data-template-id="q1-answer-a" class="canva-button answer rounded-2xl px-5 py-4 text-left font-extrabold" type="button" data-correct="true"></button> <button data-template-id="q1-answer-b" class="canva-button answer rounded-2xl px-5 py-4 text-left font-extrabold" type="button" data-correct="false"></button> <button data-template-id="q1-answer-c" class="canva-button answer rounded-2xl px-5 py-4 text-left font-extrabold" type="button" data-correct="false"></button>
+       </div>
+       <div class="feedback mt-5 items-center gap-2 rounded-2xl bg-[#fff0b9] px-4 py-3 text-[#835b12]" aria-live="polite"><span class="text-xl">🌼</span><span data-template-id="retry-message-1" class="canva-text font-bold"></span>
+       </div>
+       <div class="feedback success-feedback mt-5 items-center gap-2 rounded-2xl bg-[#dff7d5] px-4 py-3 text-[#27733c]" aria-live="polite"><span class="text-xl">⭐</span><span data-template-id="correct-message-1" class="canva-text font-bold"></span>
+       </div>
+      </div>
+      <div id="question-panel-2" class="question-panel game-card rounded-[32px] p-6 sm:p-8">
+       <p data-template-id="piece-label-2" class="canva-tag inline-flex rounded-full px-4 py-2 font-extrabold"></p>
+       <h2 data-template-id="question-2" class="canva-text title-font mt-6 text-center"></h2>
+       <div class="mt-7 grid gap-3"><button data-template-id="q2-answer-a" class="canva-button answer rounded-2xl px-5 py-4 text-left font-extrabold" type="button" data-correct="false"></button> <button data-template-id="q2-answer-b" class="canva-button answer rounded-2xl px-5 py-4 text-left font-extrabold" type="button" data-correct="true"></button> <button data-template-id="q2-answer-c" class="canva-button answer rounded-2xl px-5 py-4 text-left font-extrabold" type="button" data-correct="false"></button>
+       </div>
+       <div class="feedback mt-5 items-center gap-2 rounded-2xl bg-[#fff0b9] px-4 py-3 text-[#835b12]" aria-live="polite"><span class="text-xl">🌼</span><span data-template-id="retry-message-2" class="canva-text font-bold"></span>
+       </div>
+       <div class="feedback success-feedback mt-5 items-center gap-2 rounded-2xl bg-[#dff7d5] px-4 py-3 text-[#27733c]" aria-live="polite"><span class="text-xl">⭐</span><span data-template-id="correct-message-2" class="canva-text font-bold"></span>
+       </div>
+      </div>
+      <div id="question-panel-3" class="question-panel game-card rounded-[32px] p-6 sm:p-8">
+       <p data-template-id="piece-label-3" class="canva-tag inline-flex rounded-full px-4 py-2 font-extrabold"></p>
+       <h2 data-template-id="question-3" class="canva-text title-font mt-6 text-center"></h2>
+       <div class="mt-7 grid gap-3"><button data-template-id="q3-answer-a" class="canva-button answer rounded-2xl px-5 py-4 text-left font-extrabold" type="button" data-correct="false"></button> <button data-template-id="q3-answer-b" class="canva-button answer rounded-2xl px-5 py-4 text-left font-extrabold" type="button" data-correct="false"></button> <button data-template-id="q3-answer-c" class="canva-button answer rounded-2xl px-5 py-4 text-left font-extrabold" type="button" data-correct="true"></button>
+       </div>
+       <div class="feedback mt-5 items-center gap-2 rounded-2xl bg-[#fff0b9] px-4 py-3 text-[#835b12]" aria-live="polite"><span class="text-xl">🌼</span><span data-template-id="retry-message-3" class="canva-text font-bold"></span>
+       </div>
+       <div class="feedback success-feedback mt-5 items-center gap-2 rounded-2xl bg-[#dff7d5] px-4 py-3 text-[#27733c]" aria-live="polite"><span class="text-xl">⭐</span><span data-template-id="correct-message-3" class="canva-text font-bold"></span>
+       </div>
+      </div>
+     </section>
+    </div>
+   </main>
+   <div id="win-screen" class="win-screen" role="dialog" aria-modal="true" aria-labelledby="win-title">
+    <div class="confetti" aria-hidden="true">
+     <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <section data-template-id="win-card" class="canva-card win-card relative w-full max-w-xl overflow-hidden rounded-[36px] px-7 py-10 text-center sm:px-12">
+     <div class="mb-4 text-6xl">
+      🍓🎉🍓
+     </div>
+     <h2 id="win-title" data-template-id="win-title-text" class="canva-text title-font leading-tight"></h2>
+     <p data-template-id="win-subtitle" class="canva-text mt-4 font-medium"></p><button id="replay-button" data-template-id="replay-button-text" class="canva-button replay-button mt-8 rounded-2xl px-7 py-4 font-extrabold shadow-lg transition hover:-translate-y-1" type="button"></button>
+    </section>
+   </div>
+  </div>
+  <script src="/_sdk/0ddbbee1c66b1212.editing_sdk.js" integrity="sha512-HQn5LM1yruQSbY78ATUril6QeOJ9xj7KqO64ltLtb4vBwI5Qv3/tloFFOndBPZTNZoeV5xKzuth5y6FTi9crsg=="></script>
+  <script>
+    let currentQuestion = 0;
+    let soundEnabled = true;
+    let audioContext = null;
+    let backgroundTimer = null;
+
+    const panels = [
+      document.getElementById("question-panel-1"),
+      document.getElementById("question-panel-2"),
+      document.getElementById("question-panel-3")
+    ];
+    const pieces = [
+      document.getElementById("piece-1"),
+      document.getElementById("piece-2"),
+      document.getElementById("piece-3")
+    ];
+
+    function getAudioContext() {
+      if (!audioContext) {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioContext.state === "suspended") audioContext.resume();
+      return audioContext;
+    }
+
+    function tone(frequency, duration, type, volume, delay) {
+      if (!soundEnabled) return;
+      const ctx = getAudioContext();
+      const oscillator = ctx.createOscillator();
+      const gain = ctx.createGain();
+      const start = ctx.currentTime + (delay || 0);
+      oscillator.type = type || "sine";
+      oscillator.frequency.setValueAtTime(frequency, start);
+      gain.gain.setValueAtTime(0.0001, start);
+      gain.gain.exponentialRampToValueAtTime(volume || 0.08, start + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+      oscillator.connect(gain).connect(ctx.destination);
+      oscillator.start(start);
+      oscillator.stop(start + duration + 0.03);
+    }
+
+    function clickSound() { tone(520, 0.07, "sine", 0.045); }
+    function wrongSound() { tone(170, 0.18, "triangle", 0.08); }
+    function correctSound() {
+      tone(740, 0.14, "sine", 0.09);
+      tone(1050, 0.22, "sine", 0.08, 0.12);
+    }
+    function winSound() {
+      [523, 659, 784, 1047].forEach((note, index) => tone(note, 0.22, "sine", 0.08, index * 0.13));
+    }
+
+    function startBackgroundMusic() {
+      if (backgroundTimer || !soundEnabled) return;
+      const notes = [392, 494, 587, 494, 440, 523, 659, 523];
+      let index = 0;
+      backgroundTimer = setInterval(() => {
+        if (soundEnabled) tone(notes[index++ % notes.length], 0.16, "sine", 0.025);
+      }, 900);
+    }
+
+    function updateProgress() {
+      const completed = currentQuestion;
+      document.getElementById("progress-count").textContent = completed + "/3";
+      document.getElementById("progress-fill").style.width = (completed / 3 * 100) + "%";
+    }
+
+    function hideFeedback(panel) {
+      panel.querySelectorAll(".feedback").forEach(item => item.classList.remove("visible"));
+    }
+
+    function showQuestion(index) {
+      panels.forEach((panel, panelIndex) => {
+        panel.classList.toggle("active", panelIndex === index);
+        hideFeedback(panel);
+      });
+    }
+
+    function revealPiece(index) {
+      const piece = pieces[index];
+      piece.classList.add("revealed", "just-revealed");
+      setTimeout(() => piece.classList.remove("just-revealed"), 800);
+    }
+
+    function wrongAnswer(button) {
+      clickSound();
+      wrongSound();
+      const panel = panels[currentQuestion];
+      hideFeedback(panel);
+      panel.querySelector(".feedback:not(.success-feedback)").classList.add("visible");
+      button.classList.remove("wrong-shake");
+      void button.offsetWidth;
+      button.classList.add("wrong-shake");
+    }
+
+    function correctAnswer(button) {
+      clickSound();
+      correctSound();
+      const solvedIndex = currentQuestion;
+      const panel = panels[solvedIndex];
+      hideFeedback(panel);
+      panel.querySelector(".success-feedback").classList.add("visible");
+      button.classList.add("correct-flash");
+      panel.querySelectorAll(".answer").forEach(answer => answer.disabled = true);
+      revealPiece(solvedIndex);
+      currentQuestion += 1;
+      updateProgress();
+
+      setTimeout(() => {
+        if (currentQuestion < 3) {
+          showQuestion(currentQuestion);
+        } else {
+          winSound();
+          document.getElementById("win-screen").classList.add("visible");
+        }
+      }, 950);
+    }
+
+    document.querySelectorAll(".answer").forEach(button => {
+      button.addEventListener("click", () => {
+        startBackgroundMusic();
+        if (button.dataset.correct === "true") correctAnswer(button);
+        else wrongAnswer(button);
+      });
+    });
+
+    document.getElementById("sound-toggle").addEventListener("click", function () {
+      soundEnabled = !soundEnabled;
+      this.setAttribute("aria-pressed", String(soundEnabled));
+      this.innerHTML = soundEnabled
+        ? '<i data-lucide="volume-2" width="24" height="24"></i>'
+        : '<i data-lucide="volume-x" width="24" height="24"></i>';
+      if (soundEnabled) {
+        tone(620, 0.1, "sine", 0.05);
+        startBackgroundMusic();
+      } else if (backgroundTimer) {
+        clearInterval(backgroundTimer);
+        backgroundTimer = null;
+      }
+      lucide.createIcons();
+    });
+
+    document.getElementById("replay-button").addEventListener("click", () => {
+      document.getElementById("win-screen").classList.remove("visible");
+      currentQuestion = 0;
+      pieces.forEach(piece => piece.classList.remove("revealed", "just-revealed"));
+      panels.forEach(panel => {
+        panel.querySelectorAll(".answer").forEach(answer => {
+          answer.disabled = false;
+          answer.classList.remove("correct-flash", "wrong-shake");
+        });
+        hideFeedback(panel);
+      });
+      updateProgress();
+      showQuestion(0);
+      clickSound();
+    });
+
+    lucide.createIcons();
+  </script>
+ </body>
+</html>
