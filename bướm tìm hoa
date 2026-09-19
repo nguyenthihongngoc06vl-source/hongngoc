@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="vi">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260918-05-13efa67","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/83d6dfdadcd4750a.telemetry_sdk.js" integrity="sha512-XS4Dvzp6vbagZS9vFErihvr8aO3S0tH78KWUefn06fmL4WYqryBtZj/IOLITYj7dFA4gPVvPg1W/JB1DK3uLNQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bướm Tìm Hoa – Tìm Đáp Án Đúng</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #31513c;
+      --cream: #fffdf3;
+      --leaf: #4c9a61;
+      --rose: #f06f92;
+      --sun: #ffc94d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      font-family: "M PLUS Rounded 1c", sans-serif;
+      overflow-x: hidden;
+    }
+    .garden-sky {
+      position: relative;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(255,255,255,.9) 0 2%, transparent 2.5%),
+        radial-gradient(circle at 78% 18%, rgba(255,255,255,.75) 0 3%, transparent 3.5%),
+        linear-gradient(180deg, #a9e6f6 0%, #dff6d3 55%, #a6d976 100%);
+    }
+    .garden-sky::before {
+      content: "";
+      position: absolute;
+      inset: auto -5% -65px;
+      height: 180px;
+      z-index: 0;
+      border-radius: 50% 50% 0 0;
+      background: #72bd61;
+      box-shadow: 0 -34px 0 #8dd276, 120px -12px 0 #9cdb79, -160px -20px 0 #8bcf6e;
+    }
+    .cloud { position:absolute; color:rgba(255,255,255,.82); filter: drop-shadow(0 4px 1px rgba(71,142,156,.12)); font-size: clamp(2.5rem,5vw,5rem); animation: drift 8s ease-in-out infinite alternate; }
+    .cloud.one { left:5%; top:9%; } .cloud.two { right:7%; top:18%; animation-delay:-3s; }
+    .petal { position:absolute; z-index:1; font-size:clamp(1.2rem,2.4vw,2.2rem); animation: float 5s ease-in-out infinite; }
+    .petal.a { left:4%; bottom:18%; } .petal.b { right:5%; bottom:15%; animation-delay:-2s; } .petal.c { right:15%; top:38%; animation-delay:-1s; }
+    .game-panel {
+      position: relative; z-index: 2; width: min(1080px, 94vw);
+      min-height: min(690px, calc(92 * min(var(--vh, 1vh), 1vh)));
+      margin: 0 auto; padding: clamp(18px,3vw,34px);
+      display:flex; flex-direction:column;
+    }
+    .topbar {
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      padding: 12px 18px; border-radius: 24px;
+      background: rgba(255,253,243,.88); border: 3px solid rgba(255,255,255,.9);
+      box-shadow: 0 9px 0 rgba(71,130,72,.16);
+    }
+    .sound-button { width:46px; height:46px; border-radius:50%; display:grid; place-items:center; border:2px solid #7ab96d; cursor:pointer; transition:transform .2s; }
+    .sound-button:hover { transform:rotate(-8deg) scale(1.06); }
+    .progress-track { height: 12px; width: min(270px, 28vw); background:#d7efd2; border-radius:999px; overflow:hidden; }
+    .progress-fill { height:100%; background:linear-gradient(90deg,#f6a937,#f06f92); transition:width .5s ease; }
+    .question-stage { flex:1; display:grid; place-items:center; padding-top:22px; }
+    .question-view { width:100%; display:none; animation: popIn .45s ease both; }
+    .question-view.active { display:block; }
+    .math-card {
+      position:relative; width:min(760px,100%); margin:0 auto;
+      padding: clamp(24px,4vw,42px); text-align:center;
+      border:4px solid #fff; border-radius:36px;
+      background:rgba(255,253,243,.94); box-shadow:0 13px 0 rgba(59,114,63,.17);
+    }
+    .math-card::after { content:"🌿"; position:absolute; top:-22px; right:24px; font-size:42px; transform:rotate(14deg); }
+    .formula { color:#31513c; font-size:clamp(2.1rem,6vw,4.5rem); letter-spacing:.05em; line-height:1.1; }
+    .question-text { margin-top:12px; color:#54735b; font-size:clamp(1rem,2vw,1.28rem); }
+    .butterfly {
+      position:absolute; left:50%; top:-42px; z-index:5; font-size:clamp(3rem,6vw,4.8rem);
+      transform:translateX(-50%); transition:left .85s cubic-bezier(.2,.8,.2,1), top .85s cubic-bezier(.2,.8,.2,1), transform .3s;
+      animation: flutter .62s ease-in-out infinite alternate;
+      filter:drop-shadow(0 8px 5px rgba(48,91,57,.23));
+    }
+    .butterfly.intro-perched { left:14%; top:57%; animation: landOnFlower 1.15s cubic-bezier(.2,.8,.2,1) both, flutter .62s ease-in-out 1.15s infinite alternate; }
+    .butterfly.perched { transform:translateX(-50%) rotate(9deg) scale(.88); animation:none; }
+    .flower-grid { position:relative; display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(10px,2vw,20px); margin-top:34px; padding-top:14px; }
+    .flower-choice {
+      position:relative; min-height:145px; border:0; cursor:pointer; background:transparent; color:#31513c;
+      display:flex; flex-direction:column; align-items:center; justify-content:center; transition:transform .2s ease; outline-offset:5px;
+    }
+    .flower-choice:hover { transform:translateY(-8px) scale(1.03); }
+    .flower-choice:focus-visible { outline:4px solid #31513c; border-radius:50%; }
+    .flower-face {
+      width:clamp(76px,11vw,120px); aspect-ratio:1; display:grid; place-items:center;
+      border-radius:50%; background:#fff2a5; border:7px dotted #ff91ad;
+      box-shadow: 0 8px 0 rgba(79,133,69,.16), inset 0 0 0 6px #ffd562;
+      font-size:clamp(1.4rem,3vw,2.2rem); font-weight:900; transition:transform .4s, box-shadow .4s;
+    }
+    .flower-choice:nth-child(2) .flower-face { border-color:#bf80e9; background:#fff0ff; }
+    .flower-choice:nth-child(3) .flower-face { border-color:#f09062; background:#fff1d0; }
+    .flower-choice:nth-child(4) .flower-face { border-color:#61bad6; background:#e9fbff; }
+    .flower-letter { margin-top:7px; color:#fff; background:#4c9a61; border:3px solid #fff; border-radius:999px; padding:2px 12px; font-size:14px; font-weight:900; }
+    .flower-choice.correct .flower-face { transform:scale(1.18) rotate(7deg); box-shadow:0 0 0 9px rgba(255,206,70,.34), 0 0 25px 7px #fff0a3; }
+    .flower-choice.wrong { animation: shake .42s ease; }
+    .sparkles { position:absolute; inset:0; pointer-events:none; opacity:0; transition:opacity .2s; }
+    .flower-choice.correct .sparkles { opacity:1; animation:sparkle .8s ease infinite; }
+    .sparkles span { position:absolute; font-size:24px; }
+    .sparkles span:nth-child(1){left:10%;top:15%}.sparkles span:nth-child(2){right:8%;top:7%}.sparkles span:nth-child(3){left:45%;bottom:8%}
+    .feedback {
+      min-height:34px; margin-top:17px; text-align:center; font-size:clamp(1rem,2vw,1.25rem); font-weight:900;
+      color:#54735b;
+    }
+    .feedback.good { color:#258553; } .feedback.bad { color:#cf5572; }
+    .finish-view { display:none; width:100%; text-align:center; animation:popIn .6s ease both; }
+    .finish-view.active { display:block; }
+    .finish-card {
+      position:relative; width:min(940px,100%); margin:0 auto; padding:clamp(24px,4vw,40px);
+      background:rgba(255,253,243,.95); border:4px solid #fff; border-radius:36px; box-shadow:0 13px 0 rgba(59,114,63,.17);
+    }
+    .finish-butterfly { font-size:clamp(3rem,6vw,5rem); display:inline-block; animation:flyAround 3s ease-in-out infinite; }
+    .math-table { width:100%; margin:22px auto 18px; border-collapse:separate; border-spacing:0; overflow:hidden; border:4px solid #4c9a61; border-radius:20px; font-size:clamp(.85rem,2.4vw,1.4rem); }
+    .math-table th,.math-table td { padding:clamp(9px,1.7vw,16px) 8px; border-right:2px solid #78b46c; border-bottom:2px solid #78b46c; text-align:center; color:#31513c; background:#fffefa; }
+    .math-table tr:last-child th,.math-table tr:last-child td { border-bottom:0; }
+    .math-table td:last-child,.math-table th:last-child { border-right:0; }
+    .math-table th { width:22%; background:#d9f0c4; font-weight:900; }
+    .math-table .found { background:#fff0a4; color:#d14f71; font-weight:900; position:relative; }
+    .math-table .found::after { content:"✓"; font-size:.7em; margin-left:3px; color:#39a365; }
+    .final-cheer { font-size:clamp(1rem,2.3vw,1.35rem); color:#d45b78; font-weight:900; }
+    .restart-button { margin-top:18px; padding:10px 20px; border:0; border-radius:999px; cursor:pointer; box-shadow:0 5px 0 #d98335; transition:transform .2s; }
+    .restart-button:hover { transform:translateY(-2px); }
+    @keyframes drift { to { transform:translateX(32px); } }
+    @keyframes float { 50% { transform:translateY(-14px) rotate(12deg); } }
+    @keyframes flutter { to { transform:translateX(-50%) rotate(-8deg) translateY(-5px); } }
+    @keyframes popIn { from{opacity:0;transform:scale(.94) translateY(12px)} to{opacity:1;transform:scale(1) translateY(0)} }
+    @keyframes shake { 25%{transform:translateX(-7px)} 50%{transform:translateX(7px)} 75%{transform:translateX(-4px)} }
+    @keyframes sparkle { 50%{transform:scale(1.25) rotate(16deg)} }
+    @keyframes flyAround { 50%{transform:translate(22px,-10px) rotate(8deg)} }
+    @keyframes landOnFlower { from { left:50%; top:-42px; transform:translateX(-50%) rotate(-8deg); } to { left:14%; top:57%; transform:translateX(-50%) rotate(9deg) scale(.88); } }
+    @media (max-width:600px) {
+      .topbar { padding:9px 12px; } .topbar h1 { font-size:13px !important; }
+      .progress-track { width:100px; } .flower-grid { grid-template-columns:repeat(2,1fr); margin-top:22px; }
+      .flower-choice { min-height:116px; } .math-card { border-radius:26px; }
+    }
+  </style>
+  <script src="/_sdk/8de366929c5f3b48.data_sdk.js" type="text/javascript" integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
+  <script src="/_sdk/765e1fea0cec97ce.resizing_sdk.js" type="text/javascript" integrity="sha512-IRTJnqww0+HQ5V/LlWEQrlD5SrYHaVvaeVoNe8HYQXoaguzUGheSd9+n9s6WOgaTcEH0g37DuINHZ9aqfzWjlw=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full">
+  <div class="garden-sky w-full">
+   <span class="cloud one">☁</span> <span class="cloud two">☁</span> <span class="petal a">🌸</span> <span class="petal b">🌼</span> <span class="petal c">✦</span>
+   <main class="game-panel" aria-live="polite">
+    <header data-template-id="game-header" class="canva-header topbar">
+     <h1 data-template-id="game-title" class="canva-text font-black"></h1>
+     <div class="flex items-center gap-3">
+      <div class="progress-track" aria-label="Tiến trình trò chơi">
+       <div id="progress-fill" class="progress-fill" style="width:25%"></div>
+      </div><button id="sound-toggle" type="button" class="sound-button" aria-label="Bật hoặc tắt âm thanh"> <i data-lucide="volume-2" width="22" height="22"></i> </button>
+     </div>
+    </header>
+    <section class="question-stage" aria-label="Khu vực câu hỏi">
+     <section id="q1" class="question-view active" aria-label="Câu 1">
+      <div data-template-id="question-card-1" class="canva-card math-card">
+       <div id="butterfly-1" class="butterfly intro-perched" aria-hidden="true">
+        🦋
+       </div>
+       <p data-template-id="progress-1" class="canva-text font-black text-sm tracking-wider"></p>
+       <div data-template-id="formula-1" class="canva-text formula font-black"></div>
+       <p data-template-id="prompt-1" class="canva-text question-text"></p>
+       <div class="flower-grid">
+        <button type="button" class="flower-choice" data-question="1" data-correct="false"><span class="flower-face"><span data-template-id="q1-a" class="canva-text"></span></span><span data-template-id="q1-letter-a" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button> <button type="button" class="flower-choice" data-question="1" data-correct="true"><span class="flower-face"><span data-template-id="q1-b" class="canva-text"></span></span><span data-template-id="q1-letter-b" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button> <button type="button" class="flower-choice" data-question="1" data-correct="false"><span class="flower-face"><span data-template-id="q1-c" class="canva-text"></span></span><span data-template-id="q1-letter-c" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button> <button type="button" class="flower-choice" data-question="1" data-correct="false"><span class="flower-face"><span data-template-id="q1-d" class="canva-text"></span></span><span data-template-id="q1-letter-d" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button>
+       </div>
+       <p id="feedback-1" class="feedback"></p>
+      </div>
+     </section>
+     <section id="q2" class="question-view" aria-label="Câu 2">
+      <div data-template-id="question-card-2" class="canva-card math-card">
+       <div id="butterfly-2" class="butterfly intro-perched" aria-hidden="true">
+        🦋
+       </div>
+       <p data-template-id="progress-2" class="canva-text font-black text-sm tracking-wider"></p>
+       <div data-template-id="formula-2" class="canva-text formula font-black"></div>
+       <p data-template-id="prompt-2" class="canva-text question-text"></p>
+       <div class="flower-grid">
+        <button type="button" class="flower-choice" data-question="2" data-correct="false"><span class="flower-face"><span data-template-id="q2-a" class="canva-text"></span></span><span data-template-id="q2-letter-a" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button> <button type="button" class="flower-choice" data-question="2" data-correct="false"><span class="flower-face"><span data-template-id="q2-b" class="canva-text"></span></span><span data-template-id="q2-letter-b" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button> <button type="button" class="flower-choice" data-question="2" data-correct="false"><span class="flower-face"><span data-template-id="q2-c" class="canva-text"></span></span><span data-template-id="q2-letter-c" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button> <button type="button" class="flower-choice" data-question="2" data-correct="true"><span class="flower-face"><span data-template-id="q2-d" class="canva-text"></span></span><span data-template-id="q2-letter-d" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button>
+       </div>
+       <p id="feedback-2" class="feedback"></p>
+      </div>
+     </section>
+     <section id="q3" class="question-view" aria-label="Câu 3">
+      <div data-template-id="question-card-3" class="canva-card math-card">
+       <div id="butterfly-3" class="butterfly intro-perched" aria-hidden="true">
+        🦋
+       </div>
+       <p data-template-id="progress-3" class="canva-text font-black text-sm tracking-wider"></p>
+       <div data-template-id="formula-3" class="canva-text formula font-black"></div>
+       <p data-template-id="prompt-3" class="canva-text question-text"></p>
+       <div class="flower-grid">
+        <button type="button" class="flower-choice" data-question="3" data-correct="true"><span class="flower-face"><span data-template-id="q3-a" class="canva-text"></span></span><span data-template-id="q3-letter-a" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button> <button type="button" class="flower-choice" data-question="3" data-correct="false"><span class="flower-face"><span data-template-id="q3-b" class="canva-text"></span></span><span data-template-id="q3-letter-b" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button> <button type="button" class="flower-choice" data-question="3" data-correct="false"><span class="flower-face"><span data-template-id="q3-c" class="canva-text"></span></span><span data-template-id="q3-letter-c" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button> <button type="button" class="flower-choice" data-question="3" data-correct="false"><span class="flower-face"><span data-template-id="q3-d" class="canva-text"></span></span><span data-template-id="q3-letter-d" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button>
+       </div>
+       <p id="feedback-3" class="feedback"></p>
+      </div>
+     </section>
+     <section id="q4" class="question-view" aria-label="Câu 4">
+      <div data-template-id="question-card-4" class="canva-card math-card">
+       <div id="butterfly-4" class="butterfly intro-perched" aria-hidden="true">
+        🦋
+       </div>
+       <p data-template-id="progress-4" class="canva-text font-black text-sm tracking-wider"></p>
+       <div data-template-id="formula-4" class="canva-text formula font-black"></div>
+       <p data-template-id="prompt-4" class="canva-text question-text"></p>
+       <div class="flower-grid">
+        <button type="button" class="flower-choice" data-question="4" data-correct="false"><span class="flower-face"><span data-template-id="q4-a" class="canva-text"></span></span><span data-template-id="q4-letter-a" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button> <button type="button" class="flower-choice" data-question="4" data-correct="false"><span class="flower-face"><span data-template-id="q4-b" class="canva-text"></span></span><span data-template-id="q4-letter-b" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button> <button type="button" class="flower-choice" data-question="4" data-correct="true"><span class="flower-face"><span data-template-id="q4-c" class="canva-text"></span></span><span data-template-id="q4-letter-c" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button> <button type="button" class="flower-choice" data-question="4" data-correct="false"><span class="flower-face"><span data-template-id="q4-d" class="canva-text"></span></span><span data-template-id="q4-letter-d" class="canva-text flower-letter"></span><span class="sparkles"><span>✦</span><span>★</span><span>✧</span></span></button>
+       </div>
+       <p id="feedback-4" class="feedback"></p>
+      </div>
+     </section>
+     <section id="finish" class="finish-view" aria-label="Màn hình hoàn thành">
+      <div data-template-id="finish-card" class="canva-card finish-card">
+       <div class="finish-butterfly" aria-hidden="true">
+        🦋
+       </div>
+       <h2 data-template-id="finish-title" class="canva-text font-black text-2xl sm:text-4xl"></h2>
+       <div class="text-3xl mt-2" aria-hidden="true">
+        🌸 ✦ 🌼 ✦ 🌸
+       </div>
+       <table class="math-table" aria-label="Bảng phép tính đã hoàn thành">
+        <tbody>
+         <tr>
+          <th data-template-id="table-row-label-1" class="canva-text"></th>
+          <td data-template-id="table-18" class="canva-text"></td>
+          <td data-template-id="table-22-first" class="canva-text found"></td>
+          <td data-template-id="table-21" class="canva-text"></td>
+          <td data-template-id="table-22-second" class="canva-text found"></td>
+          <td data-template-id="table-60" class="canva-text"></td>
+         </tr>
+         <tr>
+          <th data-template-id="table-row-label-2" class="canva-text"></th>
+          <td data-template-id="table-12" class="canva-text"></td>
+          <td data-template-id="table-16" class="canva-text"></td>
+          <td data-template-id="table-33" class="canva-text found"></td>
+          <td data-template-id="table-18-second" class="canva-text"></td>
+          <td data-template-id="table-110" class="canva-text found"></td>
+         </tr>
+         <tr>
+          <th data-template-id="table-row-label-3" class="canva-text"></th>
+          <td data-template-id="table-30" class="canva-text"></td>
+          <td data-template-id="table-38" class="canva-text"></td>
+          <td data-template-id="table-54" class="canva-text"></td>
+          <td data-template-id="table-40" class="canva-text"></td>
+          <td data-template-id="table-170" class="canva-text"></td>
+         </tr>
+        </tbody>
+       </table>
+       <p data-template-id="finish-cheer" class="canva-text final-cheer"></p><button id="restart-game" data-template-id="restart-button" type="button" class="canva-button restart-button"></button>
+      </div>
+     </section>
+    </section>
+   </main>
+  </div>
+  <script src="/_sdk/0ddbbee1c66b1212.editing_sdk.js" integrity="sha512-HQn5LM1yruQSbY78ATUril6QeOJ9xj7KqO64ltLtb4vBwI5Qv3/tloFFOndBPZTNZoeV5xKzuth5y6FTi9crsg=="></script>
+  <script>
+    let soundOn = true;
+    let audioContext = null;
+    let musicTimer = null;
+    let currentQuestion = 1;
+    let locked = false;
+
+    function getAudio() {
+      if (!audioContext) audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      if (audioContext.state === "suspended") audioContext.resume();
+      return audioContext;
+    }
+
+    function tone(freq, duration, type, volume, delay) {
+      if (!soundOn) return;
+      const ctx = getAudio(), oscillator = ctx.createOscillator(), gain = ctx.createGain();
+      oscillator.type = type || "sine";
+      oscillator.frequency.setValueAtTime(freq, ctx.currentTime + (delay || 0));
+      gain.gain.setValueAtTime(volume || 0.05, ctx.currentTime + (delay || 0));
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + (delay || 0) + duration);
+      oscillator.connect(gain); gain.connect(ctx.destination);
+      oscillator.start(ctx.currentTime + (delay || 0)); oscillator.stop(ctx.currentTime + (delay || 0) + duration);
+    }
+
+    function startMusic() {
+      if (!soundOn || musicTimer) return;
+      const melody = [523, 659, 784, 659, 587, 698, 784, 698];
+      let note = 0;
+      musicTimer = setInterval(() => {
+        if (soundOn) tone(melody[note++ % melody.length], 0.22, "triangle", 0.018);
+      }, 460);
+    }
+
+    function stopMusic() {
+      clearInterval(musicTimer);
+      musicTimer = null;
+    }
+
+    function playCorrect() {
+      tone(880, .12, "sine", .09);
+      tone(1175, .25, "sine", .08, .12);
+    }
+    function playWrong() {
+      tone(220, .17, "triangle", .055);
+      tone(180, .2, "triangle", .045, .13);
+    }
+    function playFly() {
+      tone(480, .07, "sine", .025);
+      tone(620, .08, "sine", .02, .09);
+    }
+    function playWin() {
+      [523,659,784,1047].forEach((note, index) => tone(note, .32, "triangle", .07, index * .12));
+    }
+
+    function showQuestion(number) {
+      document.querySelectorAll(".question-view").forEach(view => view.classList.remove("active"));
+      document.getElementById("q" + number).classList.add("active");
+      document.getElementById("progress-fill").style.width = (number * 25) + "%";
+      currentQuestion = number;
+      locked = false;
+      const butterfly = document.getElementById("butterfly-" + number);
+      butterfly.classList.remove("perched", "intro-perched");
+      butterfly.style.left = "";
+      butterfly.style.top = "";
+      void butterfly.offsetWidth;
+      butterfly.classList.add("intro-perched");
+      playFly();
+    }
+
+    function showFinish() {
+      document.querySelectorAll(".question-view").forEach(view => view.classList.remove("active"));
+      document.getElementById("finish").classList.add("active");
+      document.getElementById("progress-fill").style.width = "100%";
+      playWin();
+    }
+
+    document.querySelectorAll(".flower-choice").forEach(button => {
+      button.addEventListener("click", () => {
+        if (locked || Number(button.dataset.question) !== currentQuestion) return;
+        startMusic();
+        const question = button.dataset.question;
+        const feedback = document.getElementById("feedback-" + question);
+
+        if (button.dataset.correct === "true") {
+          locked = true;
+          button.classList.add("correct");
+          const flowerBox = button.getBoundingClientRect();
+          const cardBox = document.getElementById("q" + question).querySelector(".math-card").getBoundingClientRect();
+          const butterfly = document.getElementById("butterfly-" + question);
+          butterfly.style.left = (flowerBox.left - cardBox.left + flowerBox.width / 2) + "px";
+          butterfly.style.top = (flowerBox.top - cardBox.top - 26) + "px";
+          butterfly.classList.add("perched");
+          feedback.textContent = "CHÍNH XÁC! 🎉";
+          feedback.className = "feedback good";
+          playCorrect();
+
+          setTimeout(() => {
+            if (Number(question) === 4) showFinish();
+            else showQuestion(Number(question) + 1);
+          }, 1500);
+        } else {
+          button.classList.remove("wrong");
+          void button.offsetWidth;
+          button.classList.add("wrong");
+          feedback.textContent = "CHƯA ĐÚNG! HÃY THỬ LẠI NHÉ! 🌸";
+          feedback.className = "feedback bad";
+          playWrong();
+        }
+      });
+    });
+
+    document.getElementById("sound-toggle").addEventListener("click", () => {
+      soundOn = !soundOn;
+      const iconHost = document.getElementById("sound-toggle");
+      iconHost.innerHTML = soundOn ? '<i data-lucide="volume-2" width="22" height="22"></i>' : '<i data-lucide="volume-x" width="22" height="22"></i>';
+      lucide.createIcons();
+      if (soundOn) { getAudio(); startMusic(); } else stopMusic();
+    });
+
+    document.getElementById("restart-game").addEventListener("click", () => {
+      document.getElementById("finish").classList.remove("active");
+      document.querySelectorAll(".flower-choice").forEach(button => button.classList.remove("correct", "wrong"));
+      document.querySelectorAll(".feedback").forEach(item => { item.textContent = ""; item.className = "feedback"; });
+      document.querySelectorAll(".butterfly").forEach(item => { item.style.left = "50%"; item.style.top = "-42px"; item.classList.remove("perched"); });
+      showQuestion(1);
+    });
+
+    lucide.createIcons();
+  </script>
+ </body>
+</html>
